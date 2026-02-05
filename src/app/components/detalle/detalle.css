@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:host {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #2d3436;
+  font-size: 2.2rem;
+  margin: 40px 0;
+  font-weight: 700;
+}
+
+/* Contenedor para el botón de inicio */
+.nav-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* Botón de inicio */
+.btn-inicio {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-inicio:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+  filter: brightness(1.1);
+}
+
+/* Contenedor de las tarjetas */
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Tarjeta */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  max-width: 320px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+  
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+.tarjeta button {
+  background: #2d3436;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2d3436;
+}
+
+.badge {
+  display: inline-block;
+  background: #dfe6e9;
+  color: #636e72;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
