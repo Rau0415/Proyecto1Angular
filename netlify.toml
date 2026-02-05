@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist/Proyecto1"
+
+[build.environment]
+  NETLIFY_USE_ANGULAR_PLUGIN = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
